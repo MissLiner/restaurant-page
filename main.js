@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ini
   \*******************************/
 /***/ (() => {
 
-eval("let contentDiv = document.getElementById('content')\n\nlet title = document.createElement('h1');\ntitle.textContent = 'Novita';\ncontentDiv.appendChild(title);\n\nlet mainImg = document.createElement('img');\nmainImg.src = 'novita_outdoors.jpeg';\ncontentDiv.appendChild(mainImg);\n\n//# sourceURL=webpack://restaurant-page/./src/init-page-load.js?");
+eval("let contentDiv = document.getElementById('content')\n\nlet title = document.createElement('h1');\ntitle.textContent = 'Novita';\ncontentDiv.appendChild(title);\n\nlet subTitle = document.createElement('h2');\nsubTitle.textContent = 'Gramercy\\'s favorite!';\ncontentDiv.appendChild(subTitle);\n\nlet mainImg = document.createElement('img');\nmainImg.src = 'novita_outdoors.jpeg';\ncontentDiv.appendChild(mainImg);\n\nlet intro = document.createElement('p');\nintro.textContent = 'A local neighborhood favorite, Novita offers delicious Italian specialties and friendly service with a classy backdrop, that feels more like Lombardy than NYC. Novita always fits the occasion, for large groups or intimate evenings.';\ncontentDiv.appendChild(intro);\n\n//# sourceURL=webpack://restaurant-page/./src/init-page-load.js?");
 
 /***/ })
 
