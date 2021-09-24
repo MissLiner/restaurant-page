@@ -14,6 +14,8 @@ header.appendChild(logo);
 const tabNames = [ 'Home', 'Menu', 'Contact' ];
 for (let i = 0; i < tabNames.length; i++) {
     let tab = document.createElement('button');
+    tab.id = tabNames[i];
+    tab.classList.add('tab-btn');
     tab.textContent = tabNames[i];
     header.appendChild(tab);
 }
