@@ -5,6 +5,7 @@ let subTitle = document.createElement('h2');
 let intro = document.createElement('div');
 
 let header = document.createElement('div');
+header.id = 'header';
 contentDiv.appendChild(header);
 
 let logo = new Image();
