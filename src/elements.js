@@ -12,7 +12,7 @@ let logo = new Image();
 logo.src = annabelleLogo;
 header.appendChild(logo);
 
-const tabNames = [ 'Home', 'Menu', 'Contact' ];
+const tabNames = [ 'home', 'menu', 'contact' ];
 for (let i = 0; i < tabNames.length; i++) {
     let tab = document.createElement('button');
     tab.id = tabNames[i];
