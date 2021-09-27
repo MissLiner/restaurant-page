@@ -47,9 +47,19 @@ const menu = [
 
 ]
 
-const menuList = document.createElement('ul');
-menuList.textContent = menu;
+const menuList = document.createElement('div');
+//menuList.textContent = menu;
 menuList.id = 'menu-list';
+menu.forEach(function(item) {
+    const name = document.createElement('div');
+    const price = document.createElement('div');
+
+    name.textContent = item.name;
+    price.textContent = item.price;
+
+    menuList.appendChild(name);
+    menuList.appendChild(price);
+})
 intro.textContent = '';
 intro.appendChild(menuList);
 contentDiv.appendChild(intro);
