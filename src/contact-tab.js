@@ -1,7 +1,36 @@
 import { contentDiv, subTitle, intro } from './elements.js';
 
-subTitle.textContent = 'Wild treats for all ages!';
-//contentDiv.appendChild(subTitle);
+subTitle.textContent = 'Contact Us';
+contentDiv.appendChild(subTitle);
 
-intro.textContent = 'Bring your camera and your courage, and you never know what sweet surprises you might discover at Annabelle\'s. Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savannah, only sweeter!';
-//contentDiv.appendChild(intro);
+intro.textContent = '';
+
+const contacts = [
+    {
+        method: 'Ring us:',
+        info: '(800)SweetAB',
+    },
+    {
+        method: 'Write us:',
+        info: 'annabelle@sweetsafari.com',
+    },
+    {
+        method: 'Stop by:',
+        info: '7 East Stephenson Place,\n New York, NY 81245'
+    }
+]
+
+const contactInfo = document.createElement('div');
+contactInfo.id = 'contact-info';
+contacts.forEach(function(contact) {
+    const method = document.createElement('div');
+    const info = document.createElement('div');
+
+    method.textContent = contact.method;
+    info.textContent = contact.info;
+
+    contactInfo.appendChild(method);
+    contactInfo.appendChild(info);
+
+})
+contentDiv.appendChild(contactInfo);
