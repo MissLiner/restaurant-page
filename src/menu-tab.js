@@ -52,6 +52,7 @@ menuList.textContent = menu;
 menuList.id = 'menu-list';
 intro.textContent = '';
 intro.appendChild(menuList);
+contentDiv.appendChild(intro);
 
 
 
