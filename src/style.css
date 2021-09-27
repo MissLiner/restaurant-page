@@ -1,5 +1,6 @@
 * {
     font-family:sans-serif;
+    text-align:center;
 }
 
 body, html {
@@ -8,14 +9,9 @@ body, html {
     margin: 0;
   }
 
-#header {
-    height: fit-content;
-    
-}
-
-h2 {
+/* h2 {
     text-align:center;
-}
+} */
 
 .tab-btn {
 background-color: #EFBCAC;
@@ -27,4 +23,15 @@ padding: 14px 16px;
 font-size: 18px;
 width: 33.3%;
 margin-top: -5px;
+}
+
+#header {
+    height: fit-content;
+    
+}
+
+#menu-list {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
 }

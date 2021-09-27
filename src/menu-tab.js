@@ -48,8 +48,8 @@ const menu = [
 ]
 
 const menuList = document.createElement('div');
-//menuList.textContent = menu;
 menuList.id = 'menu-list';
+
 menu.forEach(function(item) {
     const name = document.createElement('div');
     const price = document.createElement('div');
@@ -60,6 +60,7 @@ menu.forEach(function(item) {
     menuList.appendChild(name);
     menuList.appendChild(price);
 })
+
 intro.textContent = '';
 intro.appendChild(menuList);
 contentDiv.appendChild(intro);
