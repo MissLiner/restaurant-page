@@ -1,5 +1,5 @@
-import { loadContact } from './contact-tab.js';
-import { contentDiv, subTitle, intro, contactInfo } from './elements.js';
+//import { loadContact } from './contact-tab.js';
+import { contentDiv, subTitle, intro, contactInfo } from './index.js';
 
 function loadMenu() {
     if (contentDiv.contains(document.getElementById('contact-info'))) {
