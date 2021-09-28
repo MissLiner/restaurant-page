@@ -12,6 +12,9 @@ body, html {
 /* h2 {
     text-align:center;
 } */
+.bold {
+    font-weight:bold;
+}
 
 .tab-btn {
 background-color: #EFBCAC;
@@ -31,6 +34,12 @@ margin-top: -5px;
 }
 
 #menu-list {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+#contact-info {
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;

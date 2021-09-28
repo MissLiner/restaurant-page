@@ -1,8 +1,9 @@
 import annabelleLogo from './annabelle_logo.svg';
 
-let contentDiv = document.getElementById('content');
-let subTitle = document.createElement('h2');
-let intro = document.createElement('div');
+const contentDiv = document.getElementById('content');
+const subTitle = document.createElement('h2');
+const intro = document.createElement('div');
+const contactInfo = document.createElement('div');
 
 let header = document.createElement('div');
 header.id = 'header';
@@ -24,5 +25,6 @@ for (let i = 0; i < tabNames.length; i++) {
 export {
     contentDiv,
     subTitle,
-    intro
+    intro,
+    contactInfo,
 }

@@ -1,16 +1,26 @@
 import './style.css';
+import './elements.js';
 
-import * as homeTab from "./home-tab.js";
-homeTab;
-// import * as menuTab from "./menu-tab.js";
-// menuTab;
-// import * as contactTab from "./contact-tab.js";
-// contactTab;
+import { loadHome } from "./home-tab.js";
+import { loadMenu } from './menu-tab';
+import { loadContact } from './contact-tab';
+//loadHome();
 
 document.addEventListener('click', function(event) {
-    if (event.target.classList.contains('tab-btn')) {
-        import(`./${event.target.id}-tab.js`);
+    if (event.target.id === 'home') {
+        loadHome();
     }
+    else if (event.target.id === 'menu') {
+        loadMenu();
+    }
+    else if (event.target.id === 'contact') {
+        loadContact();
+    }
+    
+    // {
+    //     if
+    //     //import(`./${event.target.id}-tab.js`);
+    // }
 })
 
 
