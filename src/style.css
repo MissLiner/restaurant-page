@@ -4,7 +4,7 @@
 }
 
 body, html {
-    background-color: #f1d6cd;
+    background-color: #C7E1FF;
     height: 100%;
     margin: 0;
   }
@@ -14,7 +14,7 @@ body, html {
 }
 
 .tab-btn {
-background-color:#f1c5b6;
+background-color:#4CACFF;
 color: black;
 border: none;
 outline: none;
@@ -29,10 +29,16 @@ margin-top: -5px;
     background-color:azure
 }
 
-#header {
+#footer {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* #header {
     height: fit-content;
     
-}
+} */
 
 #menu-list {
     display:grid;

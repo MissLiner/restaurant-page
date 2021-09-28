@@ -4,6 +4,7 @@ import { loadMenu } from './menu-tab';
 import { loadContact } from './contact-tab';
 
 import annabelleLogo from './annabelle_logo.svg';
+import savannaOutline from './savanna_silhouette.svg';
 
 const contentDiv = document.getElementById('content');
 const subTitle = document.createElement('h2');
@@ -17,6 +18,11 @@ contentDiv.appendChild(header);
 const logo = new Image();
 logo.src = annabelleLogo;
 header.appendChild(logo);
+
+const footer = new Image();
+footer.src = savannaOutline;
+footer.id = 'footer';
+contentDiv.appendChild(footer);
 
 contentDiv.appendChild(subTitle);
 contentDiv.appendChild(intro);
