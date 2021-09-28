@@ -1,13 +1,8 @@
-//import { loadContact } from './contact-tab.js';
-import { contentDiv, subTitle, intro, contactInfo } from './index.js';
+import { subTitle, intro } from './index.js';
 
 function loadMenu() {
-    if (contentDiv.contains(document.getElementById('contact-info'))) {
-        contentDiv.removeChild(contactInfo);
-    }
 
     subTitle.textContent = 'Menu';
-    contentDiv.appendChild(subTitle);
     
     const menu = [
         {
@@ -69,11 +64,8 @@ function loadMenu() {
         menuList.appendChild(price);
     })
     
-    intro.textContent = '';
     intro.appendChild(menuList);
-    contentDiv.appendChild(intro);
 }
-//loadMenu();
 
 export {
     loadMenu,

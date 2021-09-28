@@ -2,10 +2,7 @@ import { contentDiv, subTitle, intro, contactInfo } from './index.js';
 
 function loadContact() {
     subTitle.textContent = 'Contact Us';
-    contentDiv.appendChild(subTitle);
-    
-    intro.textContent = '';
-    
+
     const contacts = [
         {
             method: 'Ring us:',
@@ -21,7 +18,6 @@ function loadContact() {
         }
     ]
     
-    contactInfo.id = 'contact-info';
     contacts.forEach(function(contact) {
         const method = document.createElement('div');
         const info = document.createElement('div');
@@ -33,9 +29,7 @@ function loadContact() {
         contactInfo.appendChild(info);
     
     })
-    contentDiv.appendChild(contactInfo);
 }
-//loadContact();
 
 export {
     loadContact,
