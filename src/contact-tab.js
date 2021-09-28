@@ -1,4 +1,4 @@
-import { contentDiv, subTitle, intro, contactInfo } from './index.js';
+import { subTitle, contactInfo } from './index.js';
 
 function loadContact() {
     subTitle.textContent = 'Contact Us';
