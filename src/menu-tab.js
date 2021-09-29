@@ -9,7 +9,7 @@ function loadMenu() {
             price: '$2.75',
         },
         {
-            name: 'Animal Print Cupcake', 
+            name: 'Cheetah Print Cupcake', 
             category: 'bakery',
             price: '$3.75',
             notes: 'choice of Zebra, Leopard, Snakeskin',
@@ -32,16 +32,16 @@ function loadMenu() {
             notes: 'chocolate croissant',
         },
         {
-            name: 'Hippo Sundae',
-            category: 'ice cream',
-            price: '$14.75',
-            notes: 'chocolate ice cream, chocolate shell, chocolate horn (cone), lazing in the chocolate mud (whipped cream)',
-        },
-        {
             name: 'Flamingo Ice',
             category: 'ice cream',
             price: '$3.50',
             notes: 'watermelon cream ice pop',
+        },
+        {
+            name: 'Hippo Sundae',
+            category: 'ice cream',
+            price: '$14.75',
+            notes: 'chocolate ice cream, chocolate shell, chocolate horn (cone), lazing in the chocolate mud (whipped cream)',
         },
     
     ]
