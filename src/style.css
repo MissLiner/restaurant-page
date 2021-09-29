@@ -29,6 +29,12 @@ margin-top: -5px;
     background-color:azure;
 }
 
+.selected-tab {
+    background-color: #C7E1FF;
+    font-size: larger;
+    font-weight:bold;
+}
+
 #footer {
     position:absolute;
     bottom: 0px;

@@ -10,7 +10,7 @@ const contentDiv = document.getElementById('content');
 const subTitle = document.createElement('h2');
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
-const tabs = document.getElementsByClassName('tab-btn');
+const tabs = document.querySelectorAll('.tab-btn');
 
 intro.id = 'intro';
 
@@ -61,10 +61,11 @@ document.addEventListener('click', function(event) {
     if (event.target.classList.contains('tab-btn')) {
         clearContent();
 
-        for (let i = 0; i < tabs.length; i++) {
-        tabs[i].style.backgroundColor = '';
-        }
-        event.target.style.backgroundColor = '#C7E1FF';
+        document.querySelectorAll('.tab-btn').forEach(tab =>  {
+            tab.classList.remove('selected-tab');
+        })
+
+        event.target.classList.add('selected-tab');
         
         if (event.target.id === 'home') {
             loadHome();
