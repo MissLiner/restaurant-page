@@ -9,6 +9,7 @@ body, html {
     margin: 0;
   }
 
+
 span {
     background-color: #C7E1FF;
     white-space: pre;
@@ -84,6 +85,6 @@ span {
     grid-template-rows: auto;
 }
 
-#subtitle {
+/* #subtitle {
     height: 20px;
-}
+} */
