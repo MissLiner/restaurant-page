@@ -49,11 +49,15 @@ function loadHome() {
 loadHome();
 
 function clearContent() {
+    subTitle.textContent = '';
+    intro.textContent = '';
     while (contactInfo.firstChild) {
         contactInfo.removeChild(contactInfo.firstChild);
     }
-    subTitle.textContent = '';
-    intro.textContent = '';
+    while (intro.firstChild) {
+        intro.removeChild(intro.firstChild);
+    }
+
 }
 
 document.addEventListener('click', function(event) {
