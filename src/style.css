@@ -29,17 +29,18 @@ margin-top: -5px;
     background-color:azure
 }
 
+.tab-btn:
+
 #footer {
     position:absolute;
     bottom: 0px;
     left: 0px;
 }
 
-/* #header {
-    height: fit-content;
-    
-} */
-
+#intro {
+    margin:auto;
+    width: 500px;
+}
 #menu-list {
     display:grid;
     grid-template-columns: 50% 50%;

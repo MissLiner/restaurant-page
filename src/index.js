@@ -10,6 +10,9 @@ const contentDiv = document.getElementById('content');
 const subTitle = document.createElement('h2');
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
+const tabs = document.getElementsByClassName('tab-btn');
+
+intro.id = 'intro';
 
 const header = document.createElement('div');
 header.id = 'header';
@@ -52,10 +55,18 @@ function clearContent() {
     intro.textContent = '';
 }
 
+
+
 document.addEventListener('click', function(event) {
     clearContent();
 
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].style.backgroundColor = '#4CACFF';
+    }
+    event.target.style.backgroundColor = '#C7E1FF';
+    
     if (event.target.id === 'home') {
+
         loadHome();
     }
     else if (event.target.id === 'menu') {
