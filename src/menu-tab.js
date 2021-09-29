@@ -2,7 +2,7 @@ import { subTitle, intro } from './index.js';
 
 function loadMenu() {
 
-    subTitle.textContent = 'Menu';
+    //subTitle.textContent = 'Menu';
     
     const menu = [
         {

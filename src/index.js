@@ -8,6 +8,7 @@ import savannaOutline from './savanna_silhouette.svg';
 
 const contentDiv = document.getElementById('content');
 const subTitle = document.createElement('h2');
+subTitle.id = 'subtitle';
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
 const tabs = document.querySelectorAll('.tab-btn');
@@ -52,6 +53,7 @@ function clearContent() {
     while (contactInfo.firstChild) {
         contactInfo.removeChild(contactInfo.firstChild);
     }
+    subTitle.textContent = '';
     intro.textContent = '';
 }
 
