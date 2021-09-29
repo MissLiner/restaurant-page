@@ -1,8 +1,6 @@
 import { subTitle, intro, contentDiv } from './index.js';
 
 function loadMenu() {
-
-    //subTitle.textContent = 'Menu';
     
     const menu = [
         {
