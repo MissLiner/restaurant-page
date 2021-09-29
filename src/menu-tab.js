@@ -30,7 +30,7 @@ function loadMenu() {
         {
             name: 'Water Buffalo Horn',
             category: 'bakery',
-            price: '5.25',
+            price: '$5.25',
             notes: 'chocolate croissant',
         },
         {
@@ -51,17 +51,22 @@ function loadMenu() {
     const menuList = document.createElement('div');
     menuList.id = 'menu-list';
     
+    
     menu.forEach(function(item) {
         const name = document.createElement('div');
-        const price = document.createElement('div');
+        const priceDiv = document.createElement('div');
+        const priceSpan = document.createElement('span');
     
         name.textContent = item.name;
-        price.textContent = item.price;
+        priceSpan.textContent = ' ' + item.price;
+ 
     
-        name.classList.add('bold');
+        name.classList.add('bold', 'menu-name', 'leaders');
+        priceDiv.classList.add('menu-price');
     
         menuList.appendChild(name);
-        menuList.appendChild(price);
+        priceDiv.appendChild(priceSpan);
+        menuList.appendChild(priceDiv);
     })
     
     intro.appendChild(menuList);
