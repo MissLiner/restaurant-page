@@ -67,14 +67,15 @@ span {
     width: 500px;
 }
 #menu-list {
+    row-gap: 10px;
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     margin: auto;
-    width: 350px;
     overflow: hidden;
-    white-space: nowrap;
     text-decoration:solid;
+    white-space: nowrap;
+    width: 350px;
 }
 
 #contact-info {
