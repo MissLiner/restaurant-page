@@ -22,19 +22,15 @@ span {
     text-align: left;
 }
 
-/* .menu-name:after {
-        content: '';
-        position: absolute;
-        bottom: .4rem;
-        width: 100%;
-        height: 0;
-        line-height: 0;
-        border-bottom: 2px dotted #ddd;
-      
-} */
+.menu-name:after {
+    left: 50px;
+    width: 0;
+    white-space: nowrap pre;
+    content:
+    " . . . . . . . . . . . . . . . . . . . . . . . ."
+}
 
 .menu-price {
-    /* background: #C7E1FF; */
     text-align: right;
 }
 
@@ -78,30 +74,8 @@ span {
     width: 350px;
     overflow: hidden;
     white-space: nowrap;
-
-text-decoration:solid;
-    /* text-overflow: ellipsis; */
+    text-decoration:solid;
 }
-
-/* .leaders {
-    max-width: 80em;
-    padding: 0;
-    overflow: hidden;
-} */
-.leaders:after {
-    left: 50px;
-    width: 0;
-    white-space: nowrap pre;
-    content:
- " . . . . . . . . . . . . . . . . . . . . . . . ."}
-
-/* .leaders span {
-    padding-right: 0.33em;
-    background: white}
-.leaders span + span {
-    float: right;
-    padding-left: 0.33em;
-    background: white} */
 
 #contact-info {
     display:grid;
