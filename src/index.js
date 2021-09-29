@@ -11,7 +11,6 @@ const subTitle = document.createElement('h2');
 subTitle.id = 'subtitle';
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
-const tabs = document.querySelectorAll('.tab-btn');
 
 intro.id = 'intro';
 
@@ -57,8 +56,6 @@ function clearContent() {
     intro.textContent = '';
 }
 
-
-
 document.addEventListener('click', function(event) {
     if (event.target.classList.contains('tab-btn')) {
         clearContent();
@@ -87,5 +84,3 @@ export {
     intro,
     contactInfo,
 }
-
-

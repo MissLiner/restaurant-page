@@ -1,4 +1,4 @@
-import { subTitle, intro } from './index.js';
+import { subTitle, intro, contentDiv } from './index.js';
 
 function loadMenu() {
 
@@ -12,7 +12,7 @@ function loadMenu() {
         },
         {
             name: 'Animal Print Cupcake', 
-            category: 'baked goods',
+            category: 'bakery',
             price: '$3.75',
             notes: 'choice of Zebra, Leopard, Snakeskin',
         },
@@ -50,24 +50,59 @@ function loadMenu() {
     
     const menuList = document.createElement('div');
     menuList.id = 'menu-list';
+
+    const candy = [];
+    candy.name = 'Candy';
+    const iceCream = [];
+    iceCream.name = 'Frozen';
+    const bakery = [];
+    bakery.name = 'Bakery';
+
+    function categorize(arr) {
+        for (const item of arr) 
+            if (item.category === 'candy') {
+                candy.push(item);
+            }
+            else if (item.category === 'bakery') {
+                bakery.push(item);
+            }
+            else if (item.category === 'ice cream') {
+                iceCream.push(item);
+            }
+    }
+
+    categorize(menu);
+
+    function createMenu(category) {
+        const catTitle = document.createElement('h3');
+        catTitle.textContent = category.name;
+        contentDiv.appendChild(catTitle);
+        const catMenu = document.createElement('div');
+        catMenu.classList.add('menu')
+        
+        category.forEach(function(item) {
+            const name = document.createElement('div');
+            const priceDiv = document.createElement('div');
+            const priceSpan = document.createElement('span');
+        
+            name.textContent = item.name;
+            priceSpan.textContent = ' ' + item.price;
     
-    
-    menu.forEach(function(item) {
-        const name = document.createElement('div');
-        const priceDiv = document.createElement('div');
-        const priceSpan = document.createElement('span');
-    
-        name.textContent = item.name;
-        priceSpan.textContent = ' ' + item.price;
- 
-    
-        name.classList.add('bold', 'menu-name', 'leaders');
-        priceDiv.classList.add('menu-price');
-    
-        menuList.appendChild(name);
-        priceDiv.appendChild(priceSpan);
-        menuList.appendChild(priceDiv);
-    })
+        
+            name.classList.add('bold', 'menu-name', 'leaders');
+            priceDiv.classList.add('menu-price');
+        
+            catMenu.appendChild(name);
+            priceDiv.appendChild(priceSpan);
+            catMenu.appendChild(priceDiv);
+            
+        })
+        contentDiv.appendChild(catMenu);
+    }
+
+    createMenu(candy);
+    createMenu(bakery);
+    createMenu(iceCream);
     
     intro.appendChild(menuList);
 }
