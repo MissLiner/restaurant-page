@@ -58,22 +58,23 @@ function clearContent() {
 
 
 document.addEventListener('click', function(event) {
-    clearContent();
+    if (event.target.classList.contains('tab-btn')) {
+        clearContent();
 
-    for (let i = 0; i < tabs.length; i++) {
-      tabs[i].style.backgroundColor = '#4CACFF';
-    }
-    event.target.style.backgroundColor = '#C7E1FF';
-    
-    if (event.target.id === 'home') {
-
-        loadHome();
-    }
-    else if (event.target.id === 'menu') {
-        loadMenu();
-    }
-    else if (event.target.id === 'contact') {
-        loadContact();
+        for (let i = 0; i < tabs.length; i++) {
+        tabs[i].style.backgroundColor = '';
+        }
+        event.target.style.backgroundColor = '#C7E1FF';
+        
+        if (event.target.id === 'home') {
+            loadHome();
+        }
+        else if (event.target.id === 'menu') {
+            loadMenu();
+        }
+        else if (event.target.id === 'contact') {
+            loadContact();
+        }
     }
 })
 
