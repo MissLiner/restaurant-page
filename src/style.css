@@ -117,10 +117,18 @@ span {
   and (orientation: portrait)
     {  
         *, .tab-btn {
-            font-size: 42px;
+            font-size: 48px;
+        }
+        h3 {
+            margin-bottom: 40px;
         }
         .menu, #intro, #contact-info {
+            font-size: 56px;
+            row-gap: 50px;
             width: 700px;
+        }
+        .menu-name {
+            font-size: 56px;
         }
         #subtitle {
             font-size:60px;
@@ -132,32 +140,39 @@ span {
     and (max-device-width: 812px) 
     and (orientation: landscape) {  
         .tab-btn {
-            font-size: 28px;
+            font-size: 16px;
         }
         h3 {
-            font-size: 24px;
+            font-size: 18px;
         }
-        #intro, #contact-info {
-            font-size: 26px;
+        #contact-info {
+            font-size: 20px;
+            width: 350px;
+        }
+        #intro{
+            font-size: 20px;
             width: 500px;
         }
         .menu {
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 5px;
             row-gap: 0px;
-            width: 400px;
+            width: 250px;
         }
         .menu-name {
+            font-size: 18px;
             margin-bottom: 5px;
             margin-top: 5px;
         }
         h3 {
+            position:absolute;
+            left: 300px;
             margin: 0px;
         }
         #subtitle {
-            font-size:48px;
+            font-size:30px;
             margin: 0px;
-            margin-bottom: 20px;
-            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-top: 10px;
         }
     } 

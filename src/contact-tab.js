@@ -10,11 +10,11 @@ function loadContact() {
         },
         {
             method: 'WRITE',
-            info: 'annabelle@sweetsafari.com',
+            info: 'bella@sweetsafari.com',
         },
         {
             method: 'VISIT',
-            info: '7 East Stephenson Place, New York, NY 81245',
+            info: '7 East Claire Place, New York, NY 81245',
         }
     ]
     
