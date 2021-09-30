@@ -9,7 +9,8 @@
 }
 
 * {
-    font-family:sans-serif;
+    font-family:'FrescaReg', sans-serif;
+    font-size: 20px;
     text-align:center;
 }
 
@@ -20,6 +21,8 @@ body, html {
   }
 
 h3 {
+    font-family: 'FrescaReg';
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
@@ -104,6 +107,7 @@ span {
 
 #contact-info {
     display:grid;
+    font-family: 'FrescaReg';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin:auto;
@@ -112,7 +116,7 @@ span {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 350px) 
   and (max-device-width: 812px) 
   and (orientation: portrait)
     {  
@@ -136,7 +140,7 @@ span {
         }
     } 
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 350px) 
     and (max-device-width: 812px) 
     and (orientation: landscape) {  
         .tab-btn {
