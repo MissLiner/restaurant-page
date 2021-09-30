@@ -9,39 +9,42 @@ import annabelleLogoMobile from './annabelle_logo_mobile.svg'
 import savannaFooterMobile from './savanna_footer_mobile.svg';
 
 const contentDiv = document.getElementById('content');
+const header = document.createElement('div');
+header.id = 'header';
+contentDiv.appendChild(header);
 const subTitle = document.createElement('h2');
 subTitle.id = 'subtitle';
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
 contactInfo.id = 'contact-info';
+const logo = new Image();
+const footer = new Image();
+footer.id = 'footer';
 
 intro.id = 'intro';
 
-const header = document.createElement('div');
-header.id = 'header';
-contentDiv.appendChild(header);
 
-if (window.matchMedia("(max-width: 900px)").matches) {
-    const logo = new Image();
+
+const mql = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
+
+function mediaQueryImages() {
+    if (mql.matches) {
+    
     logo.src = annabelleLogoMobile;
     header.appendChild(logo);
 
-    const footer = new Image();
     footer.src = savannaFooterMobile;
-    footer.id = 'footer';
     contentDiv.appendChild(footer);
-
-    document.body.style.backgroundColor = 'yellow';
   } else {
-    const logo = new Image();
     logo.src = annabelleLogo;
     header.appendChild(logo);
 
-    const footer = new Image();
     footer.src = savannaFooter;
-    footer.id = 'footer';
     contentDiv.appendChild(footer);
   }
+}
+mediaQueryImages(mql);
+mql.addListener(mediaQueryImages);
 
 contentDiv.appendChild(subTitle);
 contentDiv.appendChild(intro);
