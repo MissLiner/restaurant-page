@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'BarkingCat';
+    src: url('./Barkingcatdemo-lR9w.otf');
+}
+
+@font-face {
+    font-family: 'FrescaReg';
+    src: url('./Fresca-Regular.ttf');
+}
+
 * {
     font-family:sans-serif;
     text-align:center;
@@ -22,7 +32,21 @@ span {
     font-weight:bold;
 }
 
+.menu {
+    row-gap: 10px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-decoration:solid;
+    white-space: nowrap;
+    width: 350px;
+}
+
 .menu-name {
+    font-family: 'FrescaReg'; 
     text-align: left;
 }
 
@@ -32,9 +56,11 @@ span {
     white-space: nowrap pre;
     content:
     " . . . . . . . . . . . . . . . . . . . . . . . ."
+    " . . . . . . . . . . . . . . . . . . . . . . . ."
 }
 
 .menu-price {
+    font-family: 'FrescaReg'; 
     text-align: right;
 }
 
@@ -71,17 +97,9 @@ span {
     width: 500px;
 }
 
-.menu {
-    row-gap: 10px;
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    margin: auto;
-    margin-bottom: 30px;
-    overflow: hidden;
-    text-decoration:solid;
-    white-space: nowrap;
-    width: 350px;
+#subtitle {
+    font-family: 'FrescaReg';
+    font-size: 40px;
 }
 
 #contact-info {
@@ -96,15 +114,50 @@ span {
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  /* and (-webkit-min-device-pixel-ratio: 3) */
-  {  
-*, .tab-btn {
-    font-size: 42px;
-}
-.menu, #intro, #contact-info {
-    width: 620px;
-}
-#subtitle {
-    margin-top: 150px;
-}
-} 
+  and (orientation: portrait)
+    {  
+        *, .tab-btn {
+            font-size: 42px;
+        }
+        .menu, #intro, #contact-info {
+            width: 700px;
+        }
+        #subtitle {
+            font-size:60px;
+            margin-top: 75px;
+        }
+    } 
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (orientation: landscape) {  
+        .tab-btn {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        #intro, #contact-info {
+            font-size: 26px;
+            width: 500px;
+        }
+        .menu {
+            font-size: 24px;
+            margin-bottom: 5px;
+            row-gap: 0px;
+            width: 400px;
+        }
+        .menu-name {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        h3 {
+            margin: 0px;
+        }
+        #subtitle {
+            font-size:48px;
+            margin: 0px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    } 
