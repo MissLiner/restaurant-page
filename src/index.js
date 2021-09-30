@@ -10,47 +10,43 @@ import savannaFooterMobile from './savanna_footer_mobile.svg';
 
 const contentDiv = document.getElementById('content');
 const header = document.createElement('div');
-header.id = 'header';
-contentDiv.appendChild(header);
+const logo = new Image();
 const subTitle = document.createElement('h2');
-subTitle.id = 'subtitle';
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
-contactInfo.id = 'contact-info';
-const logo = new Image();
 const footer = new Image();
+
+header.id = 'header';
+subTitle.id = 'subtitle';
+intro.id = 'intro';
+contactInfo.id = 'contact-info';
 footer.id = 'footer';
 
-intro.id = 'intro';
-
+contentDiv.appendChild(header);
+header.appendChild(logo);
+contentDiv.appendChild(subTitle);
+contentDiv.appendChild(intro);
+contentDiv.appendChild(contactInfo);
+contentDiv.appendChild(footer);
 
 
 const mql = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
 
 function mediaQueryImages() {
     if (mql.matches) {
-    
-    logo.src = annabelleLogoMobile;
-    header.appendChild(logo);
-
-    footer.src = savannaFooterMobile;
-    contentDiv.appendChild(footer);
-  } else {
-    logo.src = annabelleLogo;
-    header.appendChild(logo);
-
-    footer.src = savannaFooter;
-    contentDiv.appendChild(footer);
-  }
+        logo.src = annabelleLogoMobile;
+        footer.src = savannaFooterMobile;
+    } else {
+        logo.src = annabelleLogo;
+        footer.src = savannaFooter;
+    }
 }
 mediaQueryImages(mql);
 mql.addListener(mediaQueryImages);
 
-contentDiv.appendChild(subTitle);
-contentDiv.appendChild(intro);
-contentDiv.appendChild(contactInfo);
 
 const tabNames = [ 'home', 'menu', 'contact' ];
+
 for (let i = 0; i < tabNames.length; i++) {
     let tab = document.createElement('button');
     tab.id = tabNames[i];
@@ -59,13 +55,15 @@ for (let i = 0; i < tabNames.length; i++) {
     header.appendChild(tab);
 }
 
-function loadHome() {
 
+function loadHome() {
     subTitle.textContent = 'Wild treats for all ages!';
     
     intro.textContent = 'Bring your camera and your courage, and you never know what sweet surprises you might discover at Annabelle\'s. Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savannah, only sweeter!';
 }
+
 loadHome();
+
 
 function clearContent() {
     subTitle.textContent = '';
@@ -79,6 +77,7 @@ function clearContent() {
 
 }
 
+
 document.addEventListener('click', function(event) {
     if (event.target.classList.contains('tab-btn')) {
         clearContent();
@@ -86,7 +85,6 @@ document.addEventListener('click', function(event) {
         document.querySelectorAll('.tab-btn').forEach(tab =>  {
             tab.classList.remove('selected-tab');
         })
-
         event.target.classList.add('selected-tab');
         
         if (event.target.id === 'home') {
