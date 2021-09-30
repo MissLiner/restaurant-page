@@ -1,19 +1,19 @@
 import { subTitle, contactInfo } from './index.js';
 
 function loadContact() {
-    subTitle.textContent = 'Contact Us';
+    subTitle.textContent = 'We\'d love to hear from you!';
 
     const contacts = [
         {
-            method: 'Ring us:',
+            method: 'RING',
             info: '1-800-SweetAB',
         },
         {
-            method: 'Write us:',
+            method: 'WRITE',
             info: 'annabelle@sweetsafari.com',
         },
         {
-            method: 'Stop by:',
+            method: 'VISIT',
             info: '7 East Stephenson Place, New York, NY 81245',
         }
     ]

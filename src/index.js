@@ -4,13 +4,16 @@ import { loadMenu } from './menu-tab';
 import { loadContact } from './contact-tab';
 
 import annabelleLogo from './annabelle_logo.svg';
-import savannaOutline from './savanna_silhouette.svg';
+import savannaFooter from './savanna_footer.svg';
+import annabelleLogoMobile from './annabelle_logo_mobile.svg'
+import savannaFooterMobile from './savanna_footer_mobile.svg';
 
 const contentDiv = document.getElementById('content');
 const subTitle = document.createElement('h2');
 subTitle.id = 'subtitle';
 const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
+contactInfo.id = 'contact-info';
 
 intro.id = 'intro';
 
@@ -18,14 +21,27 @@ const header = document.createElement('div');
 header.id = 'header';
 contentDiv.appendChild(header);
 
-const logo = new Image();
-logo.src = annabelleLogo;
-header.appendChild(logo);
+if (window.matchMedia("(max-width: 900px)").matches) {
+    const logo = new Image();
+    logo.src = annabelleLogoMobile;
+    header.appendChild(logo);
 
-const footer = new Image();
-footer.src = savannaOutline;
-footer.id = 'footer';
-contentDiv.appendChild(footer);
+    const footer = new Image();
+    footer.src = savannaFooterMobile;
+    footer.id = 'footer';
+    contentDiv.appendChild(footer);
+
+    document.body.style.backgroundColor = 'yellow';
+  } else {
+    const logo = new Image();
+    logo.src = annabelleLogo;
+    header.appendChild(logo);
+
+    const footer = new Image();
+    footer.src = savannaFooter;
+    footer.id = 'footer';
+    contentDiv.appendChild(footer);
+  }
 
 contentDiv.appendChild(subTitle);
 contentDiv.appendChild(intro);

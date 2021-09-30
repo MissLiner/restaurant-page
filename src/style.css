@@ -70,6 +70,7 @@ span {
     margin:auto;
     width: 500px;
 }
+
 .menu {
     row-gap: 10px;
     display:grid;
@@ -85,10 +86,25 @@ span {
 
 #contact-info {
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    margin:auto;
+    row-gap: 20px;
+    width: 300px;
 }
 
-/* #subtitle {
-    height: 20px;
-} */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  /* and (-webkit-min-device-pixel-ratio: 3) */
+  {  
+*, .tab-btn {
+    font-size: 42px;
+}
+.menu, #intro, #contact-info {
+    width: 620px;
+}
+#subtitle {
+    margin-top: 150px;
+}
+} 
