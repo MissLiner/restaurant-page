@@ -19,16 +19,14 @@ function loadContact() {
         }
     ]
     
-    contacts.forEach(function(contact) {
+    contacts.forEach(function addToContacts(contact) {
         const method = document.createElement('div');
-        const info = document.createElement('div');
-    
         method.textContent = contact.method;
-        info.textContent = contact.info;
-    
         contactInfo.appendChild(method);
+
+        const info = document.createElement('div');
+        info.textContent = contact.info;
         contactInfo.appendChild(info);
-    
     })
 }
 
