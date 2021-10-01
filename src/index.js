@@ -68,6 +68,8 @@ function loadHome() {
     document.getElementById('home').classList.add('selected-tab');
     fullMenu.classList.add('hidden');
     subTitle.classList.remove('hidden');
+    intro.classList.remove('hidden');
+    intro2.classList.remove('hidden');
     subTitle.textContent = 'Wild treats for all ages!';
     
     intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you might discover at Annabelle\'s! Our savanna-themed cafe immerses you in the full safari experience. Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
@@ -81,9 +83,9 @@ loadHome();
 
 function clearContent() {
     subTitle.textContent = '';
-    intro.textContent = '';
-    intro2.textContent = '';
     fullMenu.classList.add('hidden');
+    intro.classList.add('hidden');
+    intro2.classList.add('hidden');
     while (contactInfo.firstChild) {
         contactInfo.removeChild(contactInfo.firstChild);
     }
@@ -122,6 +124,7 @@ export {
     contentDiv,
     subTitle,
     intro,
+    intro2,
     contactInfo,
     fullMenu,
 }
