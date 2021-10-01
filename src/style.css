@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family:'FrescaReg', sans-serif;
+    font-family:helvetica, arial, sans-serif;
     font-size: 20px;
     text-align:center;
 }
@@ -23,7 +23,8 @@ body, html {
 h3 {
     font-family: 'FrescaReg';
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top:10px;
 }
 
 span {
@@ -41,7 +42,7 @@ span {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     overflow: hidden;
     text-decoration:solid;
     white-space: nowrap;
@@ -73,10 +74,10 @@ span {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 14px;
     font-size: 18px;
     width: 33.3%;
-    margin-top: -5px;
+    margin-top: -10px;
 }
 
 .tab-btn:hover {
@@ -85,7 +86,6 @@ span {
 
 .selected-tab {
     background-color: #C7E1FF;
-    font-size: larger;
     font-weight:bold;
 }
 
@@ -103,6 +103,8 @@ span {
 #subtitle {
     font-family: 'FrescaReg';
     font-size: 40px;
+    margin-top: 5%;
+    margin-bottom:2%;
 }
 
 #contact-info {
