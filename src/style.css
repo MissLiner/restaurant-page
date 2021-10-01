@@ -2,7 +2,6 @@
     font-family: 'BarkingCat';
     src: url('./Barkingcatdemo-lR9w.otf');
 }
-
 @font-face {
     font-family: 'FrescaReg';
     src: url('./Fresca-Regular.ttf');
@@ -13,16 +12,10 @@
     font-size: 20px;
     text-align:center;
 }
-
 body, html {
-    /* background-color: #C7E1FF; */
-    /* background: rgb(199,225,255); */
-
-
     height: 100%;
     margin: 0;
-  }
-
+}
 h3 {
     font-family: 'FrescaReg';
     font-size: 24px;
@@ -30,7 +23,6 @@ h3 {
     margin-top: 0px;
     padding-top:10px;
 }
-
 span {
     background-color: #C7E1FF;
     white-space: pre;
@@ -39,29 +31,31 @@ span {
 .bold {
     font-weight:bold;
 }
-
 .hidden {
     display: none;
 }
-
+.intro {
+    margin:auto;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    width: 80%;
+}
 .menu {
-    row-gap: 10px;
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     margin: auto;
     margin-bottom: 0px;
     overflow: hidden;
+    row-gap: 10px;
     text-decoration:solid;
     white-space: nowrap;
     width: 350px;
 }
-
 .menu-name {
     font-family: 'FrescaReg'; 
     text-align: left;
 }
-
 .menu-name:after {
     left: 50px;
     width: 0;
@@ -70,15 +64,12 @@ span {
     " . . . . . . . . . . . . . . . . . . . . . . . ."
     " . . . . . . . . . . . . . . . . . . . . . . . ."
 }
-
 .menu-price {
     font-family: 'FrescaReg'; 
     text-align: right;
 }
-
 .tab-btn {
     background-color:#85c3fa;
-    /* background: linear-gradient(0deg, rgba(199,225,255,1) 20%, rgba(133,195,250,1) 34%); */
     color: black;
     border: none;
     outline: none;
@@ -88,13 +79,9 @@ span {
     width: 33.3%;
     margin-top: -10px;
 }
-
 .tab-btn:hover {
-    /* background-color:azure; */
     font-weight: bold;
-
 }
-
 .selected-tab {
     background-color: #85c3fa;
     background-image: url(tab_cloud.svg);
@@ -102,39 +89,6 @@ span {
     background-position: center;
     background-size:contain;
     font-weight:bold;
-}
-
-#content {
-    background: linear-gradient(0deg, rgba(199,225,255,1) 95%, rgba(133,195,250,1) 100%);
-    height: 100%;
-}
-
-#full-menu {
-    left: 0;
-    right: 0;
-    padding-top: 20px;
-    position:absolute;
-}
-
-#footer {
-    position:absolute;
-    bottom: 0px;
-    left: 0px;
-}
-
-.intro {
-    margin:auto;
-    margin-top: 0px;
-    padding-bottom: 30px;
-    width: 80%;
-}
-
-#subtitle {
-    font-family: 'FrescaReg';
-    font-size: 40px;
-    margin-top:0;
-    margin-bottom: 10px;
-    padding-top: 20px;
 }
 
 #contact-info {
@@ -145,6 +99,28 @@ span {
     margin:auto;
     row-gap: 20px;
     width: 300px;
+}
+#content {
+    background: linear-gradient(0deg, rgba(199,225,255,1) 95%, rgba(133,195,250,1) 100%);
+    height: 100%;
+}
+#footer {
+    bottom: 0px;
+    left: 0px;
+    position:absolute;
+}
+#full-menu {
+    left: 0;
+    padding-top: 20px;
+    position:absolute;
+    right: 0;
+}
+#subtitle {
+    font-family: 'FrescaReg';
+    font-size: 40px;
+    margin-top:0;
+    margin-bottom: 10px;
+    padding-top: 20px;
 }
 
 @media only screen 
@@ -161,6 +137,7 @@ span {
             margin-top: 20px;
             font-weight: bold;
         }
+
         .menu, #intro, #contact-info {
             font-size: 56px;
             row-gap: 16px;
@@ -180,20 +157,13 @@ span {
     and (min-device-width: 320px) 
     and (max-device-width: 812px) 
     and (orientation: landscape) {  
-        .tab-btn {
-            font-size: 16px;
-        }
         h3 {
             font-size: 18px;
+            position:absolute;
+            left: 300px;
+            margin: 0px;
         }
-        #contact-info {
-            font-size: 20px;
-            width: 350px;
-        }
-        #intro{
-            font-size: 20px;
-            width: 500px;
-        }
+
         .menu {
             font-size: 18px;
             margin-bottom: 5px;
@@ -205,10 +175,17 @@ span {
             margin-bottom: 5px;
             margin-top: 5px;
         }
-        h3 {
-            position:absolute;
-            left: 300px;
-            margin: 0px;
+        .tab-btn {
+            font-size: 16px;
+        }
+
+        #contact-info {
+            font-size: 20px;
+            width: 350px;
+        }
+        #intro{
+            font-size: 20px;
+            width: 500px;
         }
         #subtitle {
             font-size:30px;
