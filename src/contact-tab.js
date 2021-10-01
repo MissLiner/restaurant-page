@@ -1,6 +1,7 @@
 import { subTitle, contactInfo } from './index.js';
 
 function loadContact() {
+    subTitle.classList.remove('hidden');
     subTitle.textContent = 'We\'d love to hear from you!';
 
     const contacts = [

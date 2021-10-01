@@ -7,6 +7,7 @@ import annabelleLogo from './annabelle_logo.svg';
 import savannaFooter from './savanna_footer.svg';
 import annabelleLogoMobile from './annabelle_logo_mobile.svg'
 import savannaFooterMobile from './savanna_footer_mobile.svg';
+//import tabCloud from './tab_cloud.svg';
 
 const contentDiv = document.getElementById('content');
 const header = document.createElement('div');
@@ -22,7 +23,7 @@ intro.id = 'intro';
 contactInfo.id = 'contact-info';
 footer.id = 'footer';
 
-contentDiv.appendChild(header);
+document.body.prepend(header);
 header.appendChild(logo);
 contentDiv.appendChild(subTitle);
 contentDiv.appendChild(intro);
@@ -57,6 +58,7 @@ for (let i = 0; i < tabNames.length; i++) {
 
 
 function loadHome() {
+    subTitle.classList.remove('hidden');
     subTitle.textContent = 'Wild treats for all ages!';
     
     intro.textContent = 'Bring your camera and your courage, and you never know what sweet surprises you might discover at Annabelle\'s. Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savannah, only sweeter!';

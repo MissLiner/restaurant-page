@@ -1,10 +1,11 @@
-import { intro, contentDiv } from './index.js';
+import { intro, contentDiv, subTitle } from './index.js';
 
 function loadMenu() {
-    
+    subTitle.classList.add('hidden');
+
     const menu = [
         {
-            name: 'Giraffe Lollipop', 
+            name: 'Giraffe Lollipop',
             category: 'candy',
             price: '$2.75',
         },
