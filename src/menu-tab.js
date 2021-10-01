@@ -1,8 +1,7 @@
-import { intro, contentDiv, subTitle, fullMenu } from './index.js';
+import { fullMenu } from './index.js';
 
 function loadMenu() {
-    subTitle.classList.add('hidden');
-
+    fullMenu.classList.remove('hidden');
     const menu = [
         {
             name: 'Giraffe Lollipop',

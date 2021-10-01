@@ -1,8 +1,6 @@
-import { subTitle, contactInfo, intro, intro2 } from './index.js';
+import { subTitle, contactInfo } from './index.js';
 
 function loadContact() {
-    intro.classList.add('hidden');
-    intro2.classList.add('hidden');
     subTitle.classList.remove('hidden');
     subTitle.textContent = 'We\'d love to hear from you!';
 
