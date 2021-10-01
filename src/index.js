@@ -62,6 +62,7 @@ for (let i = 0; i < tabNames.length; i++) {
 
 
 function loadHome() {
+    document.getElementById('home').classList.add('selected-tab');
     subTitle.classList.remove('hidden');
     subTitle.textContent = 'Wild treats for all ages!';
     
@@ -69,6 +70,7 @@ function loadHome() {
 }
 
 loadHome();
+
 
 
 function clearContent() {
