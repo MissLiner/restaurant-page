@@ -147,7 +147,7 @@ span {
 }
 
 @media only screen 
-  and (min-device-width: 350px) 
+  and (min-device-width: 320px) 
   and (max-device-width: 812px) 
   and (orientation: portrait)
     {  
@@ -156,27 +156,27 @@ span {
         }
         h3 {
             font-size: 56px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-weight: bold;
         }
         .menu, #intro, #contact-info {
             font-size: 56px;
-            row-gap: 50px;
+            row-gap: 16px;
             width: 700px;
         }
-        .menu-name {
-            font-size: 56px;
-        }
+
         #full-menu {
-            padding-top: 100px;
+            padding-top: 70px;
         }
         #subtitle {
             font-size:74px;
             margin-bottom: 40px;
-            padding-top: 200px;
+            padding-top: 100px;
         }
     } 
 @media only screen 
-    and (min-device-width: 350px) 
+    and (min-device-width: 320px) 
     and (max-device-width: 812px) 
     and (orientation: landscape) {  
         .tab-btn {
