@@ -17,6 +17,10 @@ const intro = document.createElement('div');
 const contactInfo = document.createElement('div');
 const footer = new Image();
 
+const fullMenu = document.createElement('div');
+fullMenu.id = 'full-menu';
+contentDiv.appendChild(fullMenu);
+
 header.id = 'header';
 subTitle.id = 'subtitle';
 intro.id = 'intro';
@@ -76,6 +80,9 @@ function clearContent() {
     while (intro.firstChild) {
         intro.removeChild(intro.firstChild);
     }
+    while (fullMenu.firstChild) {
+        fullMenu.removeChild(fullMenu.firstChild);
+    }
 
 }
 
@@ -106,4 +113,5 @@ export {
     subTitle,
     intro,
     contactInfo,
+    fullMenu,
 }

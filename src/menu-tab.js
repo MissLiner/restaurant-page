@@ -1,4 +1,4 @@
-import { intro, contentDiv, subTitle } from './index.js';
+import { intro, contentDiv, subTitle, fullMenu } from './index.js';
 
 function loadMenu() {
     subTitle.classList.add('hidden');
@@ -75,7 +75,7 @@ function loadMenu() {
     function createMenu(category) {
         const catTitle = document.createElement('h3');
         catTitle.textContent = category.name;
-        intro.appendChild(catTitle);
+        fullMenu.appendChild(catTitle);
         const catMenu = document.createElement('div');
         catMenu.classList.add('menu')
         
@@ -87,23 +87,20 @@ function loadMenu() {
             name.textContent = item.name;
             priceSpan.textContent = ' ' + item.price;
     
-        
+            
             name.classList.add('bold', 'menu-name', 'leaders');
             priceDiv.classList.add('menu-price');
         
             catMenu.appendChild(name);
             priceDiv.appendChild(priceSpan);
             catMenu.appendChild(priceDiv);
-            
         })
-        intro.appendChild(catMenu);
+        fullMenu.appendChild(catMenu);
     }
 
     createMenu(candy);
     createMenu(bakery);
     createMenu(iceCream);
-    
-    // intro.appendChild(menuList);
 }
 
 export {
