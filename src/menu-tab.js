@@ -73,6 +73,7 @@ function loadMenu() {
     categorize(menu);
 
     function createMenu(category) {
+        fullMenu.classList.remove('hidden');
         const catTitle = document.createElement('h3');
         catTitle.textContent = category.name;
         fullMenu.appendChild(catTitle);
@@ -87,7 +88,7 @@ function loadMenu() {
             name.textContent = item.name;
             priceSpan.textContent = ' ' + item.price;
     
-            
+
             name.classList.add('bold', 'menu-name', 'leaders');
             priceDiv.classList.add('menu-price');
         

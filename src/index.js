@@ -7,7 +7,6 @@ import annabelleLogo from './annabelle_logo.svg';
 import savannaFooter from './savanna_footer.svg';
 import annabelleLogoMobile from './annabelle_logo_mobile.svg'
 import savannaFooterMobile from './savanna_footer_mobile.svg';
-//import tabCloud from './tab_cloud.svg';
 
 const contentDiv = document.getElementById('content');
 const header = document.createElement('div');
@@ -20,6 +19,7 @@ const footer = new Image();
 const fullMenu = document.createElement('div');
 fullMenu.id = 'full-menu';
 contentDiv.appendChild(fullMenu);
+
 
 header.id = 'header';
 subTitle.id = 'subtitle';
@@ -63,6 +63,7 @@ for (let i = 0; i < tabNames.length; i++) {
 
 function loadHome() {
     document.getElementById('home').classList.add('selected-tab');
+    fullMenu.classList.add('hidden');
     subTitle.classList.remove('hidden');
     subTitle.textContent = 'Wild treats for all ages!';
     
@@ -76,6 +77,7 @@ loadHome();
 function clearContent() {
     subTitle.textContent = '';
     intro.textContent = '';
+    fullMenu.classList.add('hidden');
     while (contactInfo.firstChild) {
         contactInfo.removeChild(contactInfo.firstChild);
     }
