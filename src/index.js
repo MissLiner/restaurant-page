@@ -14,18 +14,15 @@ const logo = new Image();
 const subTitle = document.createElement('h2');
 const intro = document.createElement('div');
 const intro2 = document.createElement('div');
+const fullMenu = document.createElement('div');
 const contactInfo = document.createElement('div');
 const footer = new Image();
-
-const fullMenu = document.createElement('div');
-fullMenu.id = 'full-menu';
-contentDiv.appendChild(fullMenu);
-
 
 header.id = 'header';
 subTitle.id = 'subtitle';
 intro.classList.add('intro');
 intro2.classList.add('intro');
+fullMenu.id = 'full-menu';
 contactInfo.id = 'contact-info';
 footer.id = 'footer';
 
@@ -34,14 +31,15 @@ header.appendChild(logo);
 contentDiv.appendChild(subTitle);
 contentDiv.appendChild(intro);
 contentDiv.appendChild(intro2);
+contentDiv.appendChild(fullMenu);
 contentDiv.appendChild(contactInfo);
 contentDiv.appendChild(footer);
 
 
-const mql = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
+const smallWindow = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
 
-function mediaQueryImages() {
-    if (mql.matches) {
+function adjustImages(dimension) {
+    if (dimension.matches) {
         logo.src = annabelleLogoMobile;
         footer.src = savannaFooterMobile;
     } else {
@@ -49,8 +47,8 @@ function mediaQueryImages() {
         footer.src = savannaFooter;
     }
 }
-mediaQueryImages(mql);
-mql.addListener(mediaQueryImages);
+adjustImages(smallWindow);
+smallWindow.addListener(adjustImages);
 
 
 const tabNames = [ 'home', 'menu', 'contact' ];
@@ -76,16 +74,16 @@ function loadHome() {
 
     intro2.textContent = 'Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savanna, only sweeter!';
 }
-
 loadHome();
 
 
 
 function clearContent() {
-    subTitle.textContent = '';
+    subTitle.classList.add('hidden');
     fullMenu.classList.add('hidden');
     intro.classList.add('hidden');
     intro2.classList.add('hidden');
+
     while (contactInfo.firstChild) {
         contactInfo.removeChild(contactInfo.firstChild);
     }
@@ -95,7 +93,6 @@ function clearContent() {
     while (fullMenu.firstChild) {
         fullMenu.removeChild(fullMenu.firstChild);
     }
-
 }
 
 
@@ -121,10 +118,7 @@ document.addEventListener('click', function(event) {
 })
 
 export {
-    contentDiv,
     subTitle,
-    intro,
-    intro2,
-    contactInfo,
     fullMenu,
+    contactInfo,
 }
