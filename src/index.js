@@ -20,11 +20,12 @@ const footer = new Image();
 
 header.id = 'header';
 subTitle.id = 'subtitle';
-intro.classList.add('intro');
-intro2.classList.add('intro');
 fullMenu.id = 'full-menu';
 contactInfo.id = 'contact-info';
 footer.id = 'footer';
+
+intro.classList.add('intro');
+intro2.classList.add('intro');
 
 document.body.prepend(header);
 header.appendChild(logo);
@@ -36,7 +37,7 @@ contentDiv.appendChild(contactInfo);
 contentDiv.appendChild(footer);
 
 
-const smallWindow = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
+const smallerWindow = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
 
 function adjustImages(dimension) {
     if (dimension.matches) {
@@ -47,8 +48,8 @@ function adjustImages(dimension) {
         footer.src = savannaFooter;
     }
 }
-adjustImages(smallWindow);
-smallWindow.addListener(adjustImages);
+adjustImages(smallerWindow);
+smallerWindow.addListener(adjustImages);
 
 
 const tabNames = [ 'home', 'menu', 'contact' ];
@@ -64,10 +65,11 @@ for (let i = 0; i < tabNames.length; i++) {
 
 function loadHome() {
     document.getElementById('home').classList.add('selected-tab');
-    fullMenu.classList.add('hidden');
+
     subTitle.classList.remove('hidden');
     intro.classList.remove('hidden');
     intro2.classList.remove('hidden');
+    
     subTitle.textContent = 'Wild treats for all ages!';
     
     intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you might discover at Annabelle\'s! Our savanna-themed cafe immerses you in the full safari experience. Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
@@ -75,7 +77,6 @@ function loadHome() {
     intro2.textContent = 'Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savanna, only sweeter!';
 }
 loadHome();
-
 
 
 function clearContent() {
