@@ -122,10 +122,11 @@ span {
     left: 0px;
 }
 
-#intro {
+.intro {
     margin:auto;
     margin-top: 0px;
-    width: 500px;
+    padding-bottom: 30px;
+    width: 800px;
 }
 
 #subtitle {

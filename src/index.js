@@ -13,6 +13,7 @@ const header = document.createElement('div');
 const logo = new Image();
 const subTitle = document.createElement('h2');
 const intro = document.createElement('div');
+const intro2 = document.createElement('div');
 const contactInfo = document.createElement('div');
 const footer = new Image();
 
@@ -23,7 +24,8 @@ contentDiv.appendChild(fullMenu);
 
 header.id = 'header';
 subTitle.id = 'subtitle';
-intro.id = 'intro';
+intro.classList.add('intro');
+intro2.classList.add('intro');
 contactInfo.id = 'contact-info';
 footer.id = 'footer';
 
@@ -31,6 +33,7 @@ document.body.prepend(header);
 header.appendChild(logo);
 contentDiv.appendChild(subTitle);
 contentDiv.appendChild(intro);
+contentDiv.appendChild(intro2);
 contentDiv.appendChild(contactInfo);
 contentDiv.appendChild(footer);
 
@@ -67,7 +70,9 @@ function loadHome() {
     subTitle.classList.remove('hidden');
     subTitle.textContent = 'Wild treats for all ages!';
     
-    intro.textContent = 'Bring your camera and your courage, and you never know what sweet surprises you might discover at Annabelle\'s. Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savannah, only sweeter!';
+    intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you might discover at Annabelle\'s! Our savanna-themed cafe immerses you in the full safari experience. Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
+
+    intro2.textContent = 'Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savanna, only sweeter!';
 }
 
 loadHome();
@@ -77,6 +82,7 @@ loadHome();
 function clearContent() {
     subTitle.textContent = '';
     intro.textContent = '';
+    intro2.textContent = '';
     fullMenu.classList.add('hidden');
     while (contactInfo.firstChild) {
         contactInfo.removeChild(contactInfo.firstChild);
