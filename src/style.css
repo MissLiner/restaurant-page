@@ -8,8 +8,9 @@
 }
 
 * {
-    font-family:helvetica, arial, sans-serif;
+    font-family: 'Mada', helvetica, arial, sans-serif;
     font-size: 18px;
+    font-weight: 400;
     text-align:center;
 }
 body, html {
@@ -39,7 +40,8 @@ span {
     margin:auto;
     margin-top: 0px;
     padding-bottom: 30px;
-    width: 80%;
+    text-align: left;
+    width: 50%;
 }
 .menu {
     display:grid;
@@ -118,10 +120,10 @@ span {
 }
 #subtitle {
     font-family: 'FrescaReg';
-    font-size: 40px;
+    font-size: 32px;
     margin-top:0;
     margin-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 @media only screen 

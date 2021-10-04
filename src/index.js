@@ -69,10 +69,10 @@ function loadHome() {
     subTitle.classList.remove('hidden');
     intro.classList.remove('hidden');
     intro2.classList.remove('hidden');
-    
+
     subTitle.textContent = 'Wild treats for all ages!';
     
-    intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you might discover at Annabelle\'s! Our savanna-themed cafe immerses you in the full safari experience. Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
+    intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you might discover at Annabelle\'s! Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
 
     intro2.textContent = 'Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savanna, only sweeter!';
 }
