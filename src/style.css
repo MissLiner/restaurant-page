@@ -159,13 +159,20 @@ span {
             margin-top: 20px;
             font-weight: bold;
         }
-
-        .menu, #intro, #contact-info {
+        .contact-method {
+            font-size: 56px;
+        }
+        .menu, #contact-info {
             font-size: 56px;
             row-gap: 16px;
             width: 700px;
         }
-
+        .intro {
+            font-size: 50px;
+            /* margin: 0; */
+            text-align:center;
+            width: 70%;
+        }
         #full-menu {
             padding-top: 70px;
         }
