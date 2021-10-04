@@ -19,6 +19,7 @@ const contactInfo = document.createElement('div');
 const footer = new Image();
 
 header.id = 'header';
+logo.id = 'logo';
 subTitle.id = 'subtitle';
 fullMenu.id = 'full-menu';
 contactInfo.id = 'contact-info';
@@ -27,6 +28,7 @@ footer.id = 'footer';
 intro.classList.add('intro');
 intro.id = 'intro';
 intro2.classList.add('intro');
+intro2.id = 'intro2';
 
 document.body.prepend(header);
 header.appendChild(logo);
