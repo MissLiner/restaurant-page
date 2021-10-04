@@ -80,7 +80,7 @@ function loadMenu() {
             const priceSpan = document.createElement('span');
         
             name.textContent = item.name;
-            name.classList.add('bold', 'menu-name', 'leaders');
+            name.classList.add('menu-name', 'leaders');
             catMenu.appendChild(name);
 
             priceSpan.textContent = ' ' + item.price;
