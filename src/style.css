@@ -1,8 +1,4 @@
 @font-face {
-    font-family: 'BarkingCat';
-    src: url('./Barkingcatdemo-lR9w.otf');
-}
-@font-face {
     font-family: 'FrescaReg';
     src: url('./Fresca-Regular.ttf');
 }
@@ -14,6 +10,7 @@
     text-align:center;
 }
 body, html {
+    position:fixed;
     height: 100%;
     margin: 0;
     width: 100%;
@@ -121,6 +118,7 @@ span {
 }
 #content {
     background: linear-gradient(0deg, rgba(199,225,255,1) 95%, rgba(133,195,250,1) 100%);
+    bottom: 0;
     height: 100%;
 }
 #footer {
