@@ -150,7 +150,7 @@ span {
   and (max-device-width: 812px) 
   and (orientation: portrait)
     {  
-        *, .tab-btn {
+        * {
             font-size: 48px;
         }
         h3 {
@@ -162,19 +162,22 @@ span {
         .contact-method {
             font-size: 56px;
         }
-        .menu, #contact-info {
-            font-size: 56px;
-            row-gap: 16px;
-            width: 700px;
-        }
         .intro {
             font-size: 50px;
             text-align:center;
             width: 70%;
         }
+        .menu {
+            font-size: 56px;
+            row-gap: 16px;
+            width: 700px;
+        }
         .tab-btn {
             font-size: 48px;
             margin-top: -40px;
+        }
+        #contact-info {
+            font-size: 56px;
         }
         #full-menu {
             padding-top: 70px;
@@ -198,7 +201,10 @@ span {
             left: 300px;
             margin: 0px;
         }
-
+        .intro{
+            font-size: 16px;
+            width: 350px;
+        }
         .menu {
             font-size: 18px;
             margin-bottom: 5px;
@@ -214,13 +220,8 @@ span {
             font-size: 16px;
             margin-top: -10px;
         }
-
         #contact-info {
             font-size: 20px;
-            width: 350px;
-        }
-        .intro{
-            font-size: 16px;
             width: 350px;
         }
         #subtitle {
