@@ -156,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"fb8d594963237dfe84f9.ttf\";\n\n//# sourceURL=webpack://restaurant-page/./src/Fresca-Regular.ttf?");
+eval("module.exports = __webpack_require__.p + \"ec4be42f43bf009c4c47.ttf\";\n\n//# sourceURL=webpack://restaurant-page/./src/Fresca-Regular.ttf?");
 
 /***/ }),
 
@@ -166,7 +166,7 @@ eval("module.exports = __webpack_require__.p + \"fb8d594963237dfe84f9.ttf\";\n\n
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"c8947c3638c61d91d8a3.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/annabelle_logo.svg?");
+eval("module.exports = __webpack_require__.p + \"ee1c4c8a8ed331865c9e.svg\";\n\n//# sourceURL=webpack://restaurant-page/./src/annabelle_logo.svg?");
 
 /***/ }),
 
