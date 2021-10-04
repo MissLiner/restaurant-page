@@ -25,6 +25,7 @@ contactInfo.id = 'contact-info';
 footer.id = 'footer';
 
 intro.classList.add('intro');
+intro.id = 'intro';
 intro2.classList.add('intro');
 
 document.body.prepend(header);
@@ -72,7 +73,7 @@ function loadHome() {
 
     subTitle.textContent = 'Wild treats for all ages!';
     
-    intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you might discover at Annabelle\'s! Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
+    intro.textContent = `Bring your camera and your courage, because you never know what sweet surprises you'll discover at Annabelle\'s! Sit at your own Ranger Station, each with binoculars and your own guidebook to keep track of every animal you spot. Scan the horizon for wildlife, while you enjoy our delicious animal-themed desserts.`
 
     intro2.textContent = 'Cheetah cupcakes, giraffe lollipops, hippo sundaes - it\'s just like a trip to the savanna, only sweeter!';
 }
