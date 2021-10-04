@@ -21,10 +21,12 @@ function loadContact() {
     
     contacts.forEach(function addToContacts(contact) {
         const method = document.createElement('div');
+        method.classList.add('contact-method');
         method.textContent = contact.method;
         contactInfo.appendChild(method);
 
         const info = document.createElement('div');
+        info.classList.add('contact-info');
         info.textContent = contact.info;
         contactInfo.appendChild(info);
     })

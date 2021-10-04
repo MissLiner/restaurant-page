@@ -33,6 +33,20 @@ span {
 .bold {
     font-weight:bold;
 }
+.contact-info {
+    align-items: center;
+    display: flex;
+    text-align: left;
+    vertical-align: middle;
+}
+.contact-method {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    padding-left: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
 .hidden {
     display: none;
 }
@@ -40,9 +54,7 @@ span {
     border-left: solid #85c3fa;
     margin: auto;
     margin-top: 0px;
-    /* padding-bottom: 30px; */
     padding-left: 8px;
-    /* padding-top: 18px; */
     text-align: left;
     width: 50%;
 }
@@ -98,12 +110,14 @@ span {
 }
 
 #contact-info {
-    display:grid;
+    display: inline-grid;
     font-family: 'FrescaReg';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin:auto;
-    row-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 15px;
+    row-gap: 10px;
+    vertical-align: middle;
     width: 300px;
 }
 #content {
