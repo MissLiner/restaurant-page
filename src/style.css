@@ -22,6 +22,9 @@ h3 {
     margin-top: 0px;
     padding-top:10px;
 }
+img {
+    object-fit: contain;
+}
 span {
     background-color: #C7E1FF;
     white-space: pre;
@@ -50,7 +53,6 @@ span {
 .intro {
     margin: auto;
     margin-top: 0px;
-    padding-left: 8px;
     text-align: left;
     width: 50%;
 }
@@ -144,9 +146,17 @@ span {
     padding-top: 25px;
 }
 
-@media only screen  
-  /* and (min-device-width: 320px) 
-  and (max-device-width: 812px)  */
+@media only screen
+  and (orientation: portrait)
+    {
+        #logo {
+            width: 100%;
+        }
+    }
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 2000px) 
   and (orientation: portrait)
     {  
         * {
@@ -162,7 +172,7 @@ span {
             font-size: 56px;
         }
         .intro {
-            font-size: 50px;
+            font-size: 46px;
             text-align:center;
             width: 70%;
         }
@@ -176,13 +186,15 @@ span {
             margin-top: -40px;
         }
         #contact-info {
-            font-size: 56px;
+            font-size: 52px;
+            margin: auto;
+            width: 70%;
         }
         #full-menu {
             padding-top: 70px;
         }
         #logo {
-            width: 980px;
+            width: 100%;
         }
         #subtitle {
             font-size:74px;

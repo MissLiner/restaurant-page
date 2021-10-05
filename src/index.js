@@ -5,7 +5,7 @@ import { loadContact } from './contact-tab';
 
 import annabelleLogo from './annabelle_logo.svg';
 import savannaFooter from './savanna_footer.svg';
-import annabelleLogoMobile from './annabelle_logo_mobile.svg'
+import annabelleLogoMobile from './annabelle_logo_mobile.png';
 import savannaFooterMobile from './savanna_footer_mobile.svg';
 
 const contentDiv = document.getElementById('content');
@@ -40,7 +40,7 @@ contentDiv.appendChild(contactInfo);
 contentDiv.appendChild(footer);
 
 
-const smallerWindow = window.matchMedia("(orientation: portrait");
+const smallerWindow = window.matchMedia("(max-device-width: 2000px) and (orientation: portrait)");
 
 function adjustImages(dimension) {
     if (dimension.matches) {
