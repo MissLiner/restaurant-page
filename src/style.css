@@ -22,9 +22,6 @@ h3 {
     margin-top: 0px;
     padding-top:10px;
 }
-img {
-    object-fit: contain;
-}
 span {
     background-color: #C7E1FF;
     white-space: pre;
@@ -157,7 +154,7 @@ span {
 @media only screen
   and (min-device-width: 320px) 
   and (max-device-width: 1200px) 
-  and (orientation: portrait)
+  /* and (orientation: portrait) */
     {  
         * {
             font-size: 48px;
@@ -203,8 +200,8 @@ span {
         }
     } 
 @media only screen 
-    and (min-device-width: 320px) 
-    and (max-device-width: 812px) 
+    and (min-device-width: 350px) 
+    and (max-device-width: 1000px)
     and (orientation: landscape) {  
         h3 {
             font-size: 18px;
@@ -214,7 +211,51 @@ span {
         }
         .intro{
             font-size: 16px;
+            width: 36%;
+        }
+        .menu {
+            font-size: 18px;
+            margin-bottom: 5px;
+            row-gap: 0px;
+            width: 250px;
+        }
+        .menu-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .tab-btn {
+            font-size: 16px;
+            top: -20px;
+            position: relative;
+        }
+        #contact-info {
+            font-size: 20px;
             width: 350px;
+        }
+        #content {
+            margin: -20px;
+        }
+        #subtitle {
+            font-size:18px;
+            margin: 0px;
+            margin-bottom: 5px;
+            margin-top: 0px;
+            padding-top: 20px;
+        }
+    } 
+    @media only screen 
+    and (min-device-width: 2000px) 
+    and (orientation: landscape) {  
+        h3 {
+            font-size: 18px;
+            position:absolute;
+            left: 300px;
+            margin: 0px;
+        }
+        .intro{
+            font-size: 45px;
+            width: 70%;
         }
         .menu {
             font-size: 18px;
@@ -243,3 +284,4 @@ span {
             padding-top: 30px;
         }
     } 
+
