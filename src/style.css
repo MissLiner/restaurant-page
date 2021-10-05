@@ -156,7 +156,7 @@ span {
 
 @media only screen
   and (min-device-width: 320px) 
-  and (max-device-width: 2000px) 
+  and (max-device-width: 1200px) 
   and (orientation: portrait)
     {  
         * {
