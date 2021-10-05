@@ -154,7 +154,7 @@ span {
 @media only screen
   and (min-device-width: 320px) 
   and (max-device-width: 1200px) 
-  /* and (orientation: portrait) */
+  and (orientation: portrait)
     {  
         * {
             font-size: 48px;
@@ -171,7 +171,7 @@ span {
         .intro {
             font-size: 46px;
             text-align:center;
-            width: 70%;
+            width: 85%;
         }
         .menu {
             font-size: 56px;
@@ -195,7 +195,7 @@ span {
         }
         #subtitle {
             font-size:74px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             padding-top: 100px;
         }
     } 
