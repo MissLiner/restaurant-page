@@ -40,7 +40,7 @@ contentDiv.appendChild(contactInfo);
 contentDiv.appendChild(footer);
 
 
-const smallerWindow = window.matchMedia("(max-width: 1000px) and (orientation: portrait");
+const smallerWindow = window.matchMedia("(orientation: portrait");
 
 function adjustImages(dimension) {
     if (dimension.matches) {
