@@ -88,10 +88,9 @@ span {
     border-top: solid lightslategray 15px;
     outline: none;
     cursor: pointer;
-    padding: 14px 14px;
+    padding: 14px 0px 16px 0px;
     font-size: 18px;
     width: 33.3333%;
-    margin-top: -10px;
 }
 .tab-btn:hover {
     font-weight: bold;
@@ -186,6 +185,9 @@ span {
             font-size: 52px;
             margin: auto;
             width: 70%;
+        }
+        #content {
+            top: -15px;
         }
         #full-menu {
             padding-top: 70px;
