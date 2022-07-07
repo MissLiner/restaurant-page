@@ -69,6 +69,7 @@ function loadMenu() {
     function createMenu(category) {
         const catTitle = document.createElement('h3');
         catTitle.textContent = category.name;
+        catTitle.classList.add("menu-title");
         fullMenu.appendChild(catTitle);
 
         const catMenu = document.createElement('div');
