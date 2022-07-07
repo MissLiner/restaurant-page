@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FrescaReg';
-    src: url('./Fresca-Regular.ttf');
+    src: url('./resources/fonts/Fresca-Regular.ttf');
 }
 
 * {
@@ -98,7 +98,7 @@ span {
 }
 .selected-tab {
     background-color: #85c3fa;
-    background-image: url(tab_cloud.svg);
+    background-image: url(./resources/images/tab_cloud.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;

@@ -4,9 +4,9 @@ import { loadMenu } from './menu-tab';
 import { loadContact } from './contact-tab';
 
 import annabelleLogo from './resources/images/annabelle_logo.svg';
-import savannaFooter from './savanna_footer.svg';
-import annabelleLogoMobile from './annabelle_logo_mobile.png';
-import savannaFooterMobile from './savanna_footer_mobile.svg';
+import savannaFooter from './resources/images/savanna_footer.svg';
+import annabelleLogoMobile from './resources/images/annabelle_logo_mobile.png';
+import savannaFooterMobile from './resources/images/savanna_footer_mobile.svg';
 
 const contentDiv = document.getElementById('content');
 const header = document.createElement('div');
@@ -40,7 +40,7 @@ contentDiv.appendChild(contactInfo);
 contentDiv.appendChild(footer);
 
 
-const smallerWindow = window.matchMedia("(max-device-width: 1200px) and (orientation: portrait)");
+const smallerWindow = window.matchMedia("(max-device-width: 760px) and (orientation: portrait)");
 
 function adjustImages(dimension) {
     if (dimension.matches) {

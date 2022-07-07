@@ -12,14 +12,14 @@ module.exports = {
   watchOptions: {
     ignored: /node_modules/,
   },
-  plugins: [
-    new HtmlWebpackPlugin({   
-      inject: true,
-      template: path.resolve('dist', 'index.html'),
-      filename: 'index.html',
-      favicon: path.resolve('dist', 'favicon.ico'),
-    })
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({   
+  //     inject: true,
+  //     template: path.resolve('dist', 'index.html'),
+  //     filename: 'index.html',
+  //     favicon: path.resolve('dist', 'favicon.ico'),
+  //   })
+  // ],
   module: {
       
     rules: [
