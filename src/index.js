@@ -3,7 +3,7 @@ import './style.css';
 import { loadMenu } from './menu-tab';
 import { loadContact } from './contact-tab';
 
-import annabelleLogo from './annabelle_logo.svg';
+import annabelleLogo from './resources/images/annabelle_logo.svg';
 import savannaFooter from './savanna_footer.svg';
 import annabelleLogoMobile from './annabelle_logo_mobile.png';
 import savannaFooterMobile from './savanna_footer_mobile.svg';
