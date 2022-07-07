@@ -1,5 +1,6 @@
 const path = require('path');
 
+
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -11,6 +12,14 @@ module.exports = {
   watchOptions: {
     ignored: /node_modules/,
   },
+  plugins: [
+    new HtmlWebpackPlugin({   
+      inject: true,
+      template: path.resolve('dist', 'index.html'),
+      filename: 'index.html',
+      favicon: path.resolve('dist', 'favicon.ico'),
+    })
+  ],
   module: {
       
     rules: [
